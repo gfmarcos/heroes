@@ -25,7 +25,7 @@
     "static/media/marvel-hulk.jpg": "/static/media/marvel-hulk.d1af5fe5.jpg",
     "static/media/marvel-iron.jpg": "/static/media/marvel-iron.b394df11.jpg",
     "static/media/marvel-silver.jpg": "/static/media/marvel-silver.1d43a08b.jpg",
-    "static/media/marvel-spider.jpg": "/static/media/marvel-spider.054016b4.jpg",
+    "static/media/marvel-spider.jpg": "./static/media/marvel-spider.054016b4.jpg",
     "static/media/marvel-thor.jpg": "/static/media/marvel-thor.c63e651c.jpg",
     "static/media/marvel-wolverine.jpg": "/static/media/marvel-wolverine.ee676488.jpg"
   },
