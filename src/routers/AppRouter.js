@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, HashRouter } from 'react-router-dom';
 import { AuthContext } from '../auth/AuthContext';
 import { LoginScreen } from '../components/login/LoginScreen';
 import { DashboardRoutes } from './DashboardRoutes';
@@ -10,13 +10,13 @@ export const AppRouter = () => {
   const { user } = useContext(AuthContext);
 
   return (
-    <Router>
+    <HashRouter basename='/'>
       <div>
         <Switch>
           <PublicRoute exact path="/login" component={LoginScreen} isAuthenticated={user.logged} />
           <PrivateRoute path="/" component={DashboardRoutes} isAuthenticated={user.logged} />
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 };
